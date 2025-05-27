@@ -1,0 +1,1 @@
+This section contains the evaluation code for assessing the model using Exebench and HumanEval. Each folder corresponds to a specific dataset. Please use the `agent.py` to perform decompilation first, and then proceed with the evaluation.

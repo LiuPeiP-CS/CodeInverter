@@ -1,0 +1,1 @@
+After running `ProcessCode/split_data.py`, the folder `3SplitedDataset0` is generated, along with newly created files named `new_XXXX`. Move all the `new_XXXX` files into the folder `3SplitedDataset1`.
