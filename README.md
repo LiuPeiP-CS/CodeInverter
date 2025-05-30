@@ -117,9 +117,9 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 ---
 
 
-### 🔹 Table 5-7: Comparison of our decompilation models (CIM-\*) against LLM-based baselines on ExeBench. † Results taken from the original paper. (%)
+### 🔹 Table 5-7: Comparisons between our decompilation LLMs with the baselines on ExeBench. † Results taken from the original paper. (%)
 
-#### Re-com
+#### Metric: Re-com (Re-compilation Accuracy)
 
 | Metric | Model             | O0(32-bit)                   | O1(32-bit)         | O2(32-bit)         | O3(32-bit)         | AVG(32-bit)        | O0(64-bit)                  | O1(64-bit)        | O2(64-bit)        | O3(64-bit)        | AVG(64-bit)       |
 | ------ | ----------------- | ------------------- | --------- | --------- | --------- | --------- | ------------------- | --------- | --------- | --------- | --------- |
@@ -130,8 +130,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 |        | CIM-6.7B + CIW    | **86.87**           | 73.77     | 73.01     | 73.52     | 76.79     | 89.49               | 70.57     | 70.20     | 68.14     | 74.60     |
 
 ---
-
-#### Re-exe
+#### Metric: Re-exe (Re-execution Accuracy)
 
 | Metric | Model               | O0(32-bit)                   | O1(32-bit)         | O2(32-bit)         | O3(32-bit)         | AVG(32-bit)        | O0(64-bit)                  | O1(64-bit)        | O2(64-bit)        | O3(64-bit)        | AVG(64-bit)       |
 | ------ | ------------------- | ------------------- | --------- | --------- | --------- | --------- | ------------------- | --------- | --------- | --------- | --------- |
@@ -145,7 +144,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 
 ---
 
-#### ES
+#### Metric: ES (Edit Similarity)
 
 | Metric | Model             | O0(32-bit)                   | O1(32-bit)         | O2(32-bit)         | O3(32-bit)         | AVG(32-bit)        | O0(64-bit)                  | O1(64-bit)        | O2(64-bit)        | O3(64-bit)        | AVG(64-bit)       |
 | ------ | ----------------- | ------------------- | --------- | --------- | --------- | --------- | ------------------- | --------- | --------- | --------- | --------- |
@@ -159,7 +158,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 
 
 
-### 🔹 Table 8: Comparisons between our decompilation LLMs with the baselines on HumanEval 64-bit. † Results taken from the original paper. (%)
+### 🔹 Table 8: Comparisons between our decompilation LLMs with the baselines on HumanEval 64-bit. † Results taken from the Nova paper. (%)
 
 
 #### Pass\@1 and Pass\@10 Scores
