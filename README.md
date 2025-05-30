@@ -85,7 +85,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 | CIM-1.3B +CIW        | 85.98     | 87.20     | 90.24     | 89.36     | 88.26     | 90.85     | 87.80     | 87.80     | 86.59     | 88.26     |
 | CIM-6.7B +CIW        | 89.02     | 90.85     | 90.24     | 92.07     | 90.55     | 93.29     | 91.46     | 93.29     | 92.07     | 92.53     |
 
----
+
 
 #### Metric: Re-exe (Re-execution Accuracy)
 
@@ -100,7 +100,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 | CIM-1.3B +CIW        | 65.24     | 34.15     | 35.37     | 31.71     | 41.62     | 71.34     | 39.63     | 42.07     | 40.24     | 48.32     |
 | CIM-6.7B +CIW        | **75.61** | **53.05** | **53.05** | **50.00** | **57.93** | **80.49** | **57.93** | **56.71** | **53.05** | **62.05** |
 
----
+
 
 #### Metric: ES (Edit Similarity)
 
@@ -114,7 +114,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 | CIM-1.3B +CIW        | 47.45     | 35.88     | 37.03     | 36.33     | 39.17     | 47.56     | 35.67     | 37.64     | 37.31     | 39.55     |
 | CIM-6.7B +CIW        | **51.06** | **40.16** | **39.96** | **40.48** | **42.92** | 49.16     | **40.25** | **39.54** | **39.02** | **41.99** |
 
----
+
 
 
 ### 🔹 Table 5-7: Comparisons between our decompilation LLMs and the baselines on ExeBench. †: Results are from the original paper. (%)
@@ -130,7 +130,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 | CIM-6.7B + CIW        | **86.87**      | 73.77          | 73.01          | 73.52          | 76.79            | 89.49          | 70.57          | 70.20          | 68.14          | 74.60            |
 
 
----
+
 #### Metric: Re-exe (Re-execution Accuracy)
 
 | **Model**               | **O0(32-bit)**        | **O1(32-bit)**     | **O2(32-bit)**     | **O3(32-bit)**     | **AVG(32-bit)**    | **O0(64-bit)**       | **O1(64-bit)**     | **O2(64-bit)**     | **O3(64-bit)**     | **AVG(64-bit)**    |
@@ -144,7 +144,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 | CIM-6.7B + CIW          | **64.74**             | **42.86**          | **40.60**          | **40.66**          | **47.21**          | **72.13**             | **40.42**          | **36.57**          | **35.45**          | **46.14**          |
 
 
----
+
 
 #### Metric: ES (Edit Similarity)
 
@@ -156,7 +156,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 | CIM-1.3B + CIW        | 66.14                 | 50.02              | 49.03              | 48.03              | 53.31              | 67.58                 | 50.27              | 49.21              | 48.28              | 53.84              |
 | CIM-6.7B + CIW        | **69.94**             | **53.04**          | **51.28**          | **50.68**          | **56.24**          | **67.94**             | **52.72**          | **51.03**          | **50.48**          | **55.54**          |
 
----
+
 
 
 
