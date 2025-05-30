@@ -2,7 +2,7 @@
 
 ## 🧠 About This Repository
 
-This repository contains the official implementation of our paper 📄 [PDF](https://arxiv.org/pdf/2503.07215), introducing the **CodeInverter Suite** — a novel framework for enhancing neural decompilation via structural program analysis. We provide full source code, a large-scale dataset ([CID](https://huggingface.co/datasets/CodeInverter/CID)), and pretrained models ([CIM-1.3B](https://huggingface.co/CodeInverter/CIM-1.3b), [CIM-6.7B](https://huggingface.co/CodeInverter/CIM-6.7b)).
+This repository contains the official implementation of our paper 📄 [**The CodeInverter Suite: Control-Flow and Data-Mapping Augmented Binary Decompilation with LLMs**](https://arxiv.org/pdf/2503.07215), introducing the **CodeInverter Suite** — a novel design for enhancing neural decompilation via LLMs and structural program analysis. We provide full source code, a large-scale dataset ([CID](https://huggingface.co/datasets/CodeInverter/CID)), and pretrained models ([CIM-1.3B](https://huggingface.co/CodeInverter/CIM-1.3b), [CIM-6.7B](https://huggingface.co/CodeInverter/CIM-6.7b)).
 
 ---
 
