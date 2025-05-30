@@ -1,4 +1,4 @@
----
+
 
 ## 🧠 About This Repository
 
@@ -173,7 +173,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 | CIM-1.3B + CIW       | 70.64       | 38.41     | 38.63     | 37.26     | 46.23     | 82.71        | 59.75     | 57.74     | 55.70     | 63.97     |
 | **CIM-6.7B + CIW**   | **79.66**   | **57.56** | **55.70** | **52.96** | **61.47** | **90.35**    | **76.79** | **71.48** | **67.68** | **76.57** |
 
-
+---
 
 ## 📚 Citation
 
@@ -188,4 +188,4 @@ If you find our work useful for your research or product, please consider citing
 }
 ```
 
----
+
