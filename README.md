@@ -36,7 +36,7 @@ We evaluate these models on **ExeBench** and **HumanEval** using rigorous metric
 * 📝 *Edit Similarity*
 * 📊 *Pass\@k*
 
-> Remarkably, **CIM models outperform much larger models like DeepSeek-V3 (up to 100× in size)** while achieving **state-of-the-art (SOTA)** performance in both correctness and efficiency.
+> Remarkably, **CIM models outperform much larger models like DeepSeek-V3 (up to 100× in size)** while achieving **state-of-the-art (SOTA)** performance in multiple metrics.
 
 ---
 
