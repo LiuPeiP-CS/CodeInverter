@@ -162,9 +162,8 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 
 
 
-### 🔹 Table 8: Comparisons between our decompilation LLMs with the baselines on HumanEval 64-bit (%)
+### 🔹 Table 8: Comparisons between our decompilation LLMs with the baselines on HumanEval 64-bit. † Results taken from the original paper. (%)
 
-† The results are from Nova \[Nan2024Nova] paper.
 
 #### Pass\@1 and Pass\@10 Scores
 
@@ -179,10 +178,6 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 | CIM-1.3B + CIW       | 70.64       | 38.41     | 38.63     | 37.26     | 46.23     | 82.71        | 59.75     | 57.74     | 55.70     | 63.97     |
 | **CIM-6.7B + CIW**   | **79.66**   | **57.56** | **55.70** | **52.96** | **61.47** | **90.35**    | **76.79** | **71.48** | **67.68** | **76.57** |
 
-
-> ✅ From Table 1-3, our proposed **CIM** model consistently achieves **SOTA performance** across multiple metrics and datasets, outperforming other baselines on HumanEval.
-
----
 
 
 ## 📚 Citation
