@@ -57,7 +57,7 @@ train/run_ms2decllm_train.sh
 We evaluate our models on HumanEval and ExeBench datasets. The comparison is shown below.
 
 ### 🔹 Table 1: Decompilation results on HumanEval using only Assembly instructions (without CIW) (%)
-| Metric     | Model       | O0 (32)   | O1 (32)   | O2 (32)   | O3 (32)   | AVG (32)  | O0 (64)   | O1 (64)   | O2 (64)   | O3 (64)   | AVG (64)  |
+| Metric     | Model       | O0 (32-bit)   | O1 (32-bit)   | O2 (32-bit)   | O3 (32-bit)   | AVG (32-bit)  | O0 (64-bit)   | O1 (64-bit)   | O2 (64-bit)   | O3 (64-bit)   | AVG (64-bit)  |
 | ---------- | ----------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | **Re-com** | GPT-4o      | 85.98     | 82.32     | 83.54     | 78.05     | 82.47     | 89.02     | 77.44     | 85.98     | 79.27     | 82.93     |
 |            | Deepseek-V3 | **94.51** | **87.80** | **85.98** | **89.63** | **89.48** | **95.73** | **88.41** | **89.02** | **84.15** | **89.33** |
@@ -70,11 +70,11 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 |            | Qwen-plus   | 10.64     | 15.78     | 16.42     | 15.71     | 14.64     | 27.44     | 22.06     | 21.57     | 22.29     | 23.34     |
 
 
-### 🔹 Table 2-4: Comparisons between our decompilation LLMs with the baselines on HumanEval (%)
+### 🔹 Table 2-4: Comparisons between our decompilation LLMs with the baselines on HumanEval. *: Our reproduction using LLM4Decompile’s original settings. †: Results are from the original paper. (%)
 
 #### Metric: Re-com (Re-compilation Accuracy)
 
-| Model                | 32-bit O0 | 32-bit O1        | O2        | O3        | AVG       | 64-bit O0 | O1        | O2        | O3        | AVG       |
+| Model                | O0(32-bit) | O1(32-bit)        | O2(32-bit)        | O3(32-bit)        | AVG(32-bit)       | O0(64-bit) | O1(64-bit)        | O2(64-bit)        | O3(64-bit)        | AVG(64-bit) |
 | -------------------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | GPT-4o +CIW          | 95.73     | 91.46     | **92.07** | **93.90** | **93.29** | **97.56** | 91.46     | **94.51** | 84.76     | 92.07     |
 | Deepseek-V3 +CIW     | **96.34** | **92.07** | 89.63     | 90.85     | 92.22     | **97.56** | 87.80     | 85.37     | 78.66     | 87.35     |
@@ -89,7 +89,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 
 #### Metric: Re-exe (Re-execution Accuracy)
 
-| Model                | 32-bit O0 | O1        | O2        | O3        | AVG       | 64-bit O0 | O1        | O2        | O3        | AVG       |
+| Model                | O0(32-bit) | O1(32-bit)        | O2(32-bit)        | O3(32-bit)        | AVG(32-bit)       |  O0(64-bit) | O1(64-bit)        | O2(64-bit)        | O3(64-bit)        | AVG(64-bit)       |
 | -------------------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | GPT-4o +CIW          | 32.32     | 28.05     | 24.39     | 24.39     | 27.29     | 45.12     | 29.27     | 23.17     | 19.51     | 29.27     |
 | Deepseek-V3 +CIW     | 54.27     | 40.24     | 34.76     | 34.15     | 40.86     | 71.34     | 45.73     | 45.73     | 42.07     | 51.22     |
@@ -104,7 +104,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 
 #### Metric: ES (Edit Similarity)
 
-| Model                | 32-bit O0 | O1        | O2        | O3        | AVG       | 64-bit O0 | O1        | O2        | O3        | AVG       |
+| Model                |O0(32-bit)  | O1(32-bit)         | O2(32-bit)         | O3(32-bit)        | AVG(32-bit)        | O0(64-bit) | O1(64-bit)        | O2(64-bit)        | O3(64-bit)        | AVG(64-bit)       |
 | -------------------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | GPT-4o +CIW          | 40.81     | 35.47     | 36.28     | 35.41     | 36.99     | 44.48     | 36.45     | 36.86     | 34.11     | 37.98     |
 | Deepseek-V3 +CIW     | 45.47     | 36.15     | 36.98     | 35.33     | 38.48     | **51.36** | 36.33     | 37.61     | 33.61     | 39.73     |
@@ -121,9 +121,8 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 
 #### Re-com
 
-| Metric | Model             | O0                  | O1        | O2        | O3        | AVG       | O0                  | O1        | O2        | O3        | AVG       |
+| Metric | Model             | O0(32-bit)                   | O1(32-bit)         | O2(32-bit)         | O3(32-bit)         | AVG(32-bit)        | O0(64-bit)                  | O1(64-bit)        | O2(64-bit)        | O3(64-bit)        | AVG(64-bit)       |
 | ------ | ----------------- | ------------------- | --------- | --------- | --------- | --------- | ------------------- | --------- | --------- | --------- | --------- |
-|        |                   | **ExeBench 32-bit** |           |           |           |           | **ExeBench 64-bit** |           |           |           |           |
 | Re-com | GPT-4o + CIW      | 80.07               | **85.25** | **84.80** | **85.13** | **83.81** | 90.54               | 88.34     | 88.09     | 87.28     | 88.56     |
 |        | Deepseek-V3 + CIW | 84.30               | 81.30     | 80.15     | 81.41     | 81.79     | **93.32**           | **89.68** | **89.98** | **88.68** | **90.42** |
 |        | Qwen-plus + CIW   | 71.97               | 78.68     | 78.66     | 80.00     | 77.33     | 82.84               | 82.78     | 83.20     | 81.41     | 82.56     |
@@ -134,9 +133,8 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 
 #### Re-exe
 
-| Metric | Model               | O0                  | O1        | O2        | O3        | AVG       | O0                  | O1        | O2        | O3        | AVG       |
+| Metric | Model               | O0(32-bit)                   | O1(32-bit)         | O2(32-bit)         | O3(32-bit)         | AVG(32-bit)        | O0(64-bit)                  | O1(64-bit)        | O2(64-bit)        | O3(64-bit)        | AVG(64-bit)       |
 | ------ | ------------------- | ------------------- | --------- | --------- | --------- | --------- | ------------------- | --------- | --------- | --------- | --------- |
-|        |                     | **ExeBench 32-bit** |           |           |           |           | **ExeBench 64-bit** |           |           |           |           |
 | Re-exe | GPT-4o + CIW        | 30.87               | 30.20     | 28.27     | 29.08     | 29.61     | 43.99               | 25.61     | 23.61     | 22.06     | 28.82     |
 |        | Deepseek-V3 + CIW   | 43.83               | 36.55     | 34.26     | 34.51     | 37.29     | 59.16               | 36.48     | 32.89     | 30.86     | 39.85     |
 |        | Qwen-plus + CIW     | 22.05               | 22.54     | 21.22     | 21.28     | 21.77     | 32.96               | 19.85     | 17.33     | 16.33     | 21.62     |
@@ -149,9 +147,8 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 
 #### ES
 
-| Metric | Model             | O0                  | O1        | O2        | O3        | AVG       | O0                  | O1        | O2        | O3        | AVG       |
+| Metric | Model             | O0(32-bit)                   | O1(32-bit)         | O2(32-bit)         | O3(32-bit)         | AVG(32-bit)        | O0(64-bit)                  | O1(64-bit)        | O2(64-bit)        | O3(64-bit)        | AVG(64-bit)       |
 | ------ | ----------------- | ------------------- | --------- | --------- | --------- | --------- | ------------------- | --------- | --------- | --------- | --------- |
-|        |                   | **ExeBench 32-bit** |           |           |           |           | **ExeBench 64-bit** |           |           |           |           |
 | ES     | GPT-4o + CIW      | 52.02               | 40.53     | 38.68     | 38.44     | 42.42     | 46.53               | 41.24     | 39.85     | 40.16     | 41.95     |
 |        | Deepseek-V3 + CIW | 54.93               | 44.73     | 42.97     | 42.70     | 46.33     | 60.95               | 44.31     | 41.81     | 41.20     | 47.07     |
 |        | Qwen-plus + CIW   | 43.62               | 40.39     | 39.15     | 39.06     | 40.56     | 50.98               | 39.87     | 38.59     | 37.70     | 41.79     |
@@ -167,9 +164,9 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 
 #### Pass\@1 and Pass\@10 Scores
 
-| Model                | O0          | O1        | O2        | O3        | AVG       | O0           | O1        | O2        | O3        | AVG       |
+| Model                | O0          | O1         | O2         | O3         | AVG        | O0           | O1        | O2        | O3        | AVG       |
 | -------------------- | ----------- | --------- | --------- | --------- | --------- | ------------ | --------- | --------- | --------- | --------- |
-|                      | **Pass\@1** |           |           |           |           | **Pass\@10** |           |           |           |           |
+|                      | **Pass\@1** | **Pass\@1**|**Pass\@1** | **Pass\@1** | **Pass\@1** | **Pass\@10** | **Pass\@10**  |  **Pass\@10** | **Pass\@10**  | **Pass\@10**     |
 | GPT-4o †             | 21.34       | 18.29     | 14.48     | 13.05     | 16.79     | 29.94        | 26.74     | 21.42     | 19.88     | 24.50     |
 | LLM4Decompile 1.3B † | 15.30       | 8.26      | 9.36      | 8.38      | 10.33     | 21.79        | 15.23     | 16.17     | 13.70     | 16.72     |
 | Nova 1.3B †          | 37.53       | 21.71     | 22.68     | 18.75     | 25.17     | 49.38        | 34.84     | 36.95     | 32.03     | 38.30     |
