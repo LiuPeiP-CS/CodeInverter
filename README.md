@@ -57,7 +57,7 @@ train/run_ms2decllm_train.sh
 We evaluate our models on HumanEval and ExeBench datasets. The comparison is shown below.
 
 ### 🔹 Table 1: Decompilation results on HumanEval using only Assembly instructions (without CIW) (%)
-| Metric     | Model       | O0 (32-bit)   | O1 (32-bit)   | O2 (32-bit)   | O3 (32-bit)   | AVG (32-bit)  | O0 (64-bit)   | O1 (64-bit)   | O2 (64-bit)   | O3 (64-bit)   | AVG (64-bit)  |
+| Metric     | Model       | O0(32-bit)   | O1(32-bit)   | O2(32-bit)   | O3(32-bit)   | AVG(32-bit)  | O0(64-bit)   | O1(64-bit)   | O2(64-bit)   | O3(64-bit)   | AVG(64-bit)  |
 | ---------- | ----------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | **Re-com** | GPT-4o      | 85.98     | 82.32     | 83.54     | 78.05     | 82.47     | 89.02     | 77.44     | 85.98     | 79.27     | 82.93     |
 |            | Deepseek-V3 | **94.51** | **87.80** | **85.98** | **89.63** | **89.48** | **95.73** | **88.41** | **89.02** | **84.15** | **89.33** |
@@ -163,7 +163,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 ### 🔹 Table 8: Pass\@1 and Pass\@10 Scores comparisons between our decompilation LLMs with the baselines on HumanEval 64-bit. † Results taken from the Nova paper. (%)
 
 
-| Model                | O0(Pass\@1) | O1 (Pass\@1)  | O2(Pass\@1)  | O3(Pass\@1) | AVG(Pass\@1) | O0(Pass\@10) | O1(Pass\@10) | O2(Pass\@10) | O3(Pass\@10) | AVG(Pass\@10) |
+| Model                | O0(Pass\@1) | O1(Pass\@1)| O2(Pass\@1)  | O3(Pass\@1) | AVG(Pass\@1) | O0(Pass\@10) | O1(Pass\@10) | O2(Pass\@10) | O3(Pass\@10) | AVG(Pass\@10) |
 | -------------------- | ----------- | --------- | --------- | --------- | --------- | ------------ | --------- | --------- | --------- | --------- |
 | GPT-4o †             | 21.34       | 18.29     | 14.48     | 13.05     | 16.79     | 29.94        | 26.74     | 21.42     | 19.88     | 24.50     |
 | LLM4Decompile 1.3B † | 15.30       | 8.26      | 9.36      | 8.38      | 10.33     | 21.79        | 15.23     | 16.17     | 13.70     | 16.72     |
