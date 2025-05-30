@@ -10,11 +10,11 @@ This repository contains the official implementation of our paper 📄 [PDF](htt
 
 The **CodeInverter Suite** makes three key contributions:
 
-#### 1. **CIW: Code-Informed Wrapper**
+#### 1. **CIW: CodeInverter Workflow**
 
 We are the **first to incorporate control flow graphs (CFGs)** and **memory-to-data mappings** into the input space of large language models for code decompilation. This structured guidance enables models to generate **more accurate and semantically aligned code**.
 
-> Extensive ablation studies demonstrate the significant performance gains of CIW across various backbone LLMs, validating the value of structural input for decompilation.
+> Extensive module studies demonstrate the significant performance gains of CIW across various backbone LLMs, validating the value of structural input for decompilation.
 
 #### 2. **CID: CodeInverter Dataset**
 
