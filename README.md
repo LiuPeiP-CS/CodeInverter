@@ -183,7 +183,7 @@ If you find our work useful for your research or product, please consider citing
 @article{liupp2025codeinverter,
   title={The CodeInverter Suite: Control-Flow and Data-Mapping Augmented Binary Decompilation with LLMs},
   author={Peipei Liu, Sun Jian, Rongkang Sun, Li Chen, zhaoteng yan, Zhang Peizheng, Dapeng Sun, Dawei Wang, Xiaoling Zhang, Dan Li},
-  journal={arXiv preprint arXiv:2503.07215},
+  journal={arXiv preprint:2503.07215},
   year={2025}
 }
 ```
