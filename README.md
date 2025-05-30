@@ -70,7 +70,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 |            | Qwen-plus   | 10.64     | 15.78     | 16.42     | 15.71     | 14.64     | 27.44     | 22.06     | 21.57     | 22.29     | 23.34     |
 
 
-### 🔹 Table 2-4: Comparisons between our decompilation LLMs with the baselines on HumanEval. *: Our reproduction using LLM4Decompile’s original settings. †: Results are from the original paper. (%)
+### 🔹 Table 2-4: Comparisons between our decompilation LLMs and the baselines on HumanEval. *: Our reproduction using LLM4Decompile’s original settings. †: Results are from the original paper. (%)
 
 #### Metric: Re-com (Re-compilation Accuracy)
 
@@ -117,7 +117,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 ---
 
 
-### 🔹 Table 5-7: Comparisons between our decompilation LLMs with the baselines on ExeBench. † Results taken from the original paper. (%)
+### 🔹 Table 5-7: Comparisons between our decompilation LLMs and the baselines on ExeBench. †: Results are from the original paper. (%)
 
 #### Metric: Re-com (Re-compilation Accuracy)
 
@@ -160,7 +160,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 
 
 
-### 🔹 Table 8: Pass\@1 and Pass\@10 Scores comparisons between our decompilation LLMs with the baselines on HumanEval 64-bit. † Results taken from the Nova paper. (%)
+### 🔹 Table 8: Comparisons (of Pass\@1 and Pass\@10) between our decompilation LLMs and the baselines on HumanEval 64-bit. †: Results are from the Nova paper. (%)
 
 
 | Model                | O0(Pass\@1) | O1(Pass\@1)| O2(Pass\@1)  | O3(Pass\@1) | AVG(Pass\@1) | O0(Pass\@10) | O1(Pass\@10) | O2(Pass\@10) | O3(Pass\@10) | AVG(Pass\@10) |
@@ -180,7 +180,7 @@ We evaluate our models on HumanEval and ExeBench datasets. The comparison is sho
 If you find our work useful for your research or product, please consider citing:
 
 ```bibtex
-@article{chen2024codeinverter,
+@article{liupp2025codeinverter,
   title={The CodeInverter Suite: Control-Flow and Data-Mapping Augmented Binary Decompilation with LLMs},
   author={Peipei Liu, Sun Jian, Rongkang Sun, Li Chen, zhaoteng yan, Zhang Peizheng, Dapeng Sun, Dawei Wang, Xiaoling Zhang, Dan Li},
   journal={arXiv preprint arXiv:2503.07215},
