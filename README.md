@@ -46,7 +46,7 @@ The training pipeline is adapted from [ColossalAI’s LLaMA examples](https://gi
 To start training, use:
 
 ```bash
-train/run_ms2decllm_train.sh
+code4train/train/run_ms2decllm_train.sh
 ```
 
 ---
